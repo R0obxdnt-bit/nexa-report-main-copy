@@ -8,7 +8,9 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
-El cuadro registra las acciones realizadas por el equipo en AV1 y TB1, organizadas según los dos criterios específicos del Student Outcome 5.
+En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del **ABET – EAC - Student Outcome 5**.
+
+Las acciones se organizan por integrante y por entrega, manteniendo una lectura acumulativa del trabajo realizado en AV1, TB1 y las actualizaciones posteriores del reporte. Para evitar sobredeclarar evidencias, las acciones descritas se limitan a actividades documentales, de diseño, coordinación, arquitectura, backlog e implementación que el equipo puede sustentar mediante el informe, repositorios, capturas, artefactos o evidencias de colaboración disponibles.
 
 *Tabla: Acciones y conclusiones por criterio ABET – EAC - Student Outcome 5*
 
