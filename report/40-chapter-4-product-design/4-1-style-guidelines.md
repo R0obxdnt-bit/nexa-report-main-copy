@@ -90,7 +90,7 @@ El sistema de componentes de Nexa se construye sobre patrones reutilizables que 
 
 #### Patrones compartidos
 
-| Patrón | Comportamiento común | Propósito |
+| Patrón | Comportamiento | Propósito |
 |---|---|---|
 | Botón primario | Fondo azul primario, texto blanco, hover oscuro y foco visible | Ejecutar la acción principal del contexto |
 | Botón secundario | Fondo claro o transparente, borde visible y texto de alto contraste | Ofrecer acciones alternativas sin competir con la principal |
