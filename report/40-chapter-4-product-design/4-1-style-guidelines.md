@@ -138,7 +138,7 @@ El sistema de diseño opera sobre una rejilla flexible con breakpoints para Desk
 
 ![Spacing](../assets/images/chapter-4/style-guidelines/spacing.jpeg)
 
-Escala basada en múltiplos de 4px, desde 4px hasta 96px. Elaboración propia.
+> *Nota:* Escala basada en múltiplos de 4px, desde 4px hasta 96px. Elaboración propia.
 
 **Comportamiento responsive por superficie:**
 
