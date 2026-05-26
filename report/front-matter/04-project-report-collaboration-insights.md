@@ -1,36 +1,43 @@
 ## Project Report Collaboration Insights
 
-Esta sección documenta la colaboración del equipo **KING** alrededor del informe académico y del ecosistema de repositorios de **Nexa**. El trabajo se organizó mediante documentación Docs-as-Code, repositorios GitHub, coordinación por sprint y evidencias visuales de reuniones, diseño y commits.
+Esta sección documenta la colaboración del equipo **KING** en la elaboración y evolución del informe académico de **Nexa**. De acuerdo con el enfoque Docs-as-Code solicitado para el curso, el reporte se mantiene en un repositorio GitHub y evoluciona mediante commits, revisiones, integración de capítulos y actualización progresiva de evidencias.
+
+El objetivo principal de esta sección es explicar cómo el equipo coordinó la construcción del **Project Report**, qué repositorios se utilizaron como soporte del trabajo, qué evidencias de colaboración se conservaron y qué decisiones permitieron mantener coherencia entre documentación, diseño, backlog y producto implementado.
+
+La colaboración se describe de forma acumulativa por entrega. Las evidencias visuales incluidas corresponden a capturas disponibles de GitHub Insights, commits, Jira y reuniones del equipo. En esta versión del reporte no se inventan commits, estados de Jira, Sprint 3 ni evidencias finales no confirmadas; las actualizaciones operativas pendientes serán incorporadas cuando el equipo cuente con producto, backend y tablero realmente actualizados.
 
 ### Organización en GitHub
 
-| Recurso | URL |
-|---|---|
-| Organización GitHub del equipo KING | [https://github.com/upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king) |
-| Repositorio del informe (Docs-as-Code) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
-| Repositorio de la Landing Page | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| Repositorio de la Web Application TB1 | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
-| Repositorio del Backend / Plataforma (futuro) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
-| Landing desplegada (GitHub Pages) | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| Web App desplegada (Firebase Hosting) | [https://nexa-2f1bb.web.app/](https://nexa-2f1bb.web.app/) |
+El trabajo del equipo se organizó en una organización pública de GitHub, separando el repositorio del informe de los repositorios de implementación. Esta separación permite distinguir la evolución documental del proyecto frente a la evolución técnica de la landing page, la web application y la plataforma futura.
+
+| Recurso | URL | Propósito |
+|---|---|---|
+| Organización GitHub del equipo KING | [https://github.com/upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king) | Agrupar los repositorios oficiales del proyecto Nexa. |
+| Repositorio del informe | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) | Mantener el Project Report en formato Markdown bajo enfoque Docs-as-Code. |
+| Repositorio de la Landing Page | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Contener el sitio público de Nexa y su despliegue en GitHub Pages. |
+| Repositorio de la Web Application | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Contener la aplicación web frontend desarrollada para los flujos principales del producto. |
+| Repositorio de plataforma | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Repositorio reservado para la integración posterior de servicios y plataforma, según el alcance que confirme el equipo. |
+| Landing desplegada | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) | Evidencia de despliegue del sitio público. |
+| Web App desplegada | [https://nexa-2f1bb.web.app/](https://nexa-2f1bb.web.app/) | Evidencia de despliegue de la aplicación web frontend. |
 
 ### Distribución de actividades del equipo
 
-El equipo se organizó alrededor de liderazgos funcionales. Cada integrante mantuvo frentes principales y colaboró en tareas transversales de investigación, diseño, arquitectura, documentación y publicación. Para TB1, la evidencia verificable de control de versiones se concentra en `main` y en commits convencionales; GitFlow queda documentado como modelo de trabajo para ordenar futuras iteraciones sin presentarlo como práctica histórica completa.
+El equipo organizó la elaboración del informe mediante frentes de responsabilidad. Cada integrante asumió actividades principales y colaboró en tareas transversales de revisión, consistencia, diseño, arquitectura, backlog y preparación de evidencias.
 
-| Integrante | Frentes de liderazgo | Frentes de colaboración |
+Para evitar sobredeclarar participación, esta sección diferencia entre liderazgo de frente y colaboración de soporte. La distribución descrita se relaciona con la evidencia disponible en commits, capturas, documentos del reporte y coordinación registrada durante las entregas.
+
+| Integrante | Frentes principales documentados | Colaboración transversal |
 |---|---|---|
-| Yucra Sandoval, Diego Sebastian | Project Management, integración de capítulos, Product Backlog | Arquitectura, UX/UI, documentación |
-| Verde Bueno, Joaquín Francisco | UX/UI Design, EventStorming, Ubiquitous Language | Documentación, User Stories |
-| Marín Cueva, César Fernando | Documentación, análisis competitivo, entrevistas | UX/UI, backlog |
-| Torrejón De Los Santos, Gino Rodrigo | Documentación, Needfinding, Student Outcome | UX/UI, evidencias |
-| Rojas Mancilla, Gerard Gianpier | Software Architecture (C4/DDD), Frontend Development | Documentación, despliegue |
-
+| Yucra Sandoval, Diego Sebastian | Coordinación general, integración del reporte, Product Backlog, revisión de consistencia entre capítulos y planificación de entregas. | Revisión de arquitectura, UX/UI, evidencias, Jira y despliegues. |
+| Verde Bueno, Joaquín Francisco | UX/UI, artefactos de diseño, EventStorming, Ubiquitous Language, rutas de información y revisión de User Stories. | Documentación, mejora de imágenes, revisión de Impact Mapping y soporte en backlog. |
+| Marín Cueva, César Fernando | Documentación académica, análisis competitivo, entrevistas, revisión editorial y coherencia argumental del informe. | Soporte en UX/UI, revisión de backlog, landing page y evidencias visuales. |
+| Torrejón De Los Santos, Gino Rodrigo | Needfinding, Student Outcome, síntesis del dominio, relación entre investigación, flujos y documentación funcional. | Soporte en mockups, user flows, revisión de User Stories y preparación de evidencias. |
+| Rojas Mancilla, Gerard Gianpier | Arquitectura de software, C4/DDD, configuración técnica y soporte de implementación frontend. | Documentación técnica, despliegue, assets, screenshots y revisión de estructura del reporte. |
 ### Evidencias de GitHub Insights
 
-![GitHub Insights del equipo KING](../assets/images/front-matter/collaboration/github-insights.png)
+![GitHub Insights del equipo Vultures Devs](../assets/images/front-matter/collaboration/github-insights.png)
 
-Figura. GitHub Insights: actividad de contribuciones del equipo KING en los repositorios del proyecto Nexa. Elaboración propia.
+Figura. GitHub Insights: actividad de contribuciones del equipo Vultures Devs en los repositorios del proyecto Nexa. Elaboración propia.
 
 ### Evidencias de commits — nexa-report
 
@@ -78,32 +85,29 @@ Figura. Sprint 1 en Jira, parte 3. Elaboración propia.
 
 Figura. Product Backlog completo en Jira. Elaboración propia.
 
-### TB1 / Sprint 2 — Colaboración y coordinación
+### Colaboración acumulada por entrega
 
-Para TB1, el equipo amplió la colaboración desde documentación e investigación hacia la consolidación de la web application y la limpieza integral del reporte. La siguiente tabla resume el trabajo realizado durante Sprint 2.
+La colaboración del equipo se consolidó de forma progresiva. En AV1 se priorizó la base documental, la investigación, el diseño inicial y la landing page. En TB1 se amplió el trabajo hacia la web application, el refinamiento de UX/UI, la actualización del backlog y la mejora de coherencia entre capítulos. 
 
-| Área de colaboración | Cómo trabajamos durante TB1 | Evidencia |
+| Entrega | Enfoque de colaboración | Resultado documentado |
 |---|---|---|
-| Coordinación general | Diego lideró integración del reporte, alcance webapp, QA Docs-as-Code y consolidación final de la entrega | Commits de integración en `nexa-report`, `nexa-webapp` y `nexa-website` |
-| Documentación y revisión | César, Joaquín y Gino sostuvieron limpieza de capítulos, actualización de needfinding, IA, impact mapping, user stories y revisión de entregables | Commits distribuidos en `nexa-report` del 2 al 5 de mayo |
-| UX/UI de webapp | Gino y Joaquín actualizaron user flows, wireflows y mockups; Diego reconstruyó la estructura 4.4 | Commits de Capítulo 4 del 5 de mayo |
-| Webapp implementation | El repositorio `nexa-webapp` concentra flujos de auth, dashboard, orders, inventory, dispatch, portal, reports e i18n | Commits de `nexa-webapp` del 26/04 al 05/05 |
-| Arquitectura | Gerard contribuyó en DDD/C4, HTTP service layer y módulos puntuales de webapp | Commits vinculados a C4 y webapp clients/portal |
-| Continuidad landing | César, Joaquín, Gino y Gerard actualizaron SEO, tokens y copy; Diego alineó CTAs con webapp | Commits en `nexa-website` del 28/04 al 03/05 |
+| AV1 | Construcción inicial del informe, definición del problema, segmentos, Lean UX, requirements, diseño inicial y landing page. | Reporte base estructurado, landing page desplegada, evidencias iniciales de commits y coordinación. |
+| TB1 | Consolidación de la web application frontend, actualización de UX/UI, mejora del Product Backlog, evidencias de despliegue y revisión integral del reporte. | Reporte ampliado, web application documentada, evidencias de commits, Jira y coordinación del equipo. |
+| AV2 en preparación | Corrección documental, alineación con segmentos S1/S2/S3, limpieza de User Stories, revisión de Product Backlog y preparación para integrar evidencias reales posteriores. | Actualización documental en curso. Jira, Sprint 3, backend y commits finales no se declaran como cerrados hasta que el equipo confirme la evidencia real. |
 
-| Decisión o ajuste durante TB1 | Motivo | Resultado |
+| Decisión de mejora continua | Motivo | Efecto en el reporte |
 |---|---|---|
-| Separar Sprint 1 baseline de Sprint 2 en Capítulo 5 | Evitar mezclar landing AV1 con webapp TB1 | Capítulo 5 con dos sprints documentados por separado |
-| Usar Fake API / JSON Server en lugar de backend productivo | Validar flujos frontend sin afirmar servicios no implementados | Webapp demostrable sin sobredeclaración |
-| Reconstruir sección 4.4 con wireframes, wireflows y mockups actuales | Evidencia anterior estaba desactualizada respecto al producto | Documentación UX/UI alineada con webapp real |
-| Limpiar Capítulos 1–4 de terminología imprecisa | Segmentos, personas y style guidelines requerían coherencia con el producto actual | Reporte más coherente y defendible |
-| Documentar contribución real por evidencia | Evitar afirmaciones de contribución igualitaria no verificable | Student Outcome con progresión AV1-TB1 |
+| Alinear Requirements con S1, S2 y S3 | Evitar roles ambiguos o segmentos no aprobados. | User Stories, Impact Mapping y Product Backlog mantienen una lectura más consistente. |
+| Priorizar backlog por flujo de negocio | El valor principal de Nexa está en pedido, disponibilidad, despacho y visibilidad. | Product Backlog más defendible frente al statement y al modelo SaaS B2B. |
+| Mantener Jira como evidencia, no como reemplazo del reporte | El statement exige redactar las historias y backlogs en el Document Report. | La tabla del reporte conserva la especificación textual y Jira queda como soporte visual. |
+| No inventar backend, Sprint 3 ni commits finales | El equipo aún debe confirmar producto, servicios y evidencias reales. | La documentación evita afirmaciones no sustentadas y deja espacio para actualización posterior. |
+| Separar landing, webapp y plataforma | Cada repositorio cumple un propósito distinto dentro del ecosistema Nexa. | Se evita confundir sitio público, aplicación frontend y servicios futuros. |
 
 ### Evidencias de coordinación y trabajo en equipo
 
 ![Reunión de coordinación del equipo](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
 
-Figura. Reunión de coordinación del equipo KING durante el Sprint 1. Elaboración propia.
+Figura. Reunión de coordinación del equipo Vultures Devs durante el Sprint 1. Elaboración propia.
 
 ![Colaboración del equipo durante sprint](../assets/images/front-matter/collaboration/sprint-collaboration-evidence.jpg)
 
@@ -111,4 +115,4 @@ Figura. Trabajo colaborativo del equipo durante el Sprint 1. Elaboración propia
 
 ![Práctica de exposición del equipo](../assets/images/front-matter/collaboration/presentation-practice-evidence.png)
 
-Figura. Práctica de exposición y preparación de la sustentación AV1 del equipo KING. Elaboración propia.
+Figura. Práctica de exposición y preparación de la sustentación AV1 del equipo Vultures Devs. Elaboración propia.
