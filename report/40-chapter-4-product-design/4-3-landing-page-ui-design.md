@@ -1,21 +1,31 @@
 ## 4.3. Landing Page UI Design.
 
-La landing page es la superficie pública de entrada al ecosistema Nexa. Su función principal es comunicar la propuesta de valor, segmentar visitantes por tipo de operación y dirigirlos hacia la demostración o el acceso al producto.
+La landing page de Nexa es la superficie pública de entrada al modelo de negocio. Su propósito principal es comunicar de forma rápida la propuesta de valor del producto, explicar el problema operativo que resuelve y dirigir a los visitantes hacia una acción concreta: solicitar una demostración, conocer la plataforma o acceder a la Web Application.
+
+El mensaje principal de la landing se centra en hacer visible la operación B2B refrigerada, reduciendo la dependencia de WhatsApp, llamadas, hojas de cálculo y coordinación manual. La comunicación visual refuerza que Nexa no se presenta como un ERP completo, sino como una plataforma SaaS B2B enfocada en conectar pedidos, disponibilidad, coordinación comercial, despacho y seguimiento.
+
+La landing también cumple una función de segmentación comercial. Sus rutas públicas están dirigidas a empresas y visitantes interesados en operaciones de importación, distribución, mayoristas y cámaras frías. Estos visitantes no reemplazan a los segmentos funcionales internos del producto; más bien funcionan como rutas de entrada hacia el ecosistema operativo compuesto por S1, S2 y S3:
+
+1. **S1: Commercial Coordination**, relacionado con la validación comercial, captura de pedidos y coordinación con clientes.
+2. **S2: Operations / Account Owner**, relacionado con inventario, despacho, trazabilidad, evidencias y administración de la operación.
+3. **S3: B2B Buyer Portal**, relacionado con catálogo, solicitud de pedidos y seguimiento desde el comprador B2B.
 
 La evidencia desplegada de la landing se encuentra en: [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/).
 
-Cada elemento del sitio público tiene continuidad con alguna superficie operativa de la webapp o del portal B2B:
+La continuidad entre Landing Page y Web Application se plantea de la siguiente manera:
 
-| Elemento de la landing | Continuidad en el producto | Superficie relacionada |
+| Elemento de la landing | Propósito en el sitio público | Continuidad con el producto |
 |---|---|---|
-| CTA "Ingresar" | Acceso autenticado al sistema | [Webapp login](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) |
-| Segmento Importadores/Mayoristas | Flujos de pedido asistido para S1: Coordinación comercial / ventas internas | `/ops/orders/new` |
-| Segmento Distribuidores | Control logístico y despacho para S2: Jefatura logística / coordinación operativa | `/ops/dispatch`, `/ops/inventory` |
-| Segmento Cámaras Frías | Monitoreo y trazabilidad para S2: Jefatura logística / coordinación operativa | `/ops/inventory`, `/ops/reports` |
-| Propuesta de catálogo/pedidos | Compra autónoma B2B para S3: Comprador B2B / cliente comercial | `/portal/catalog`, `/portal/orders` |
-| Explicación de la plataforma | Dashboard y módulos operativos | `/ops/dashboard` |
+| Hero principal y pitch message | Comunicar que Nexa vuelve visible la operación refrigerada y reduce la coordinación dispersa. | Introduce el valor transversal de los flujos de pedido, inventario, despacho y seguimiento. |
+| CTA de demostración | Permitir que un visitante comercial solicite conocer la solución antes de contratarla. | Conecta con el flujo comercial previo a la adopción del SaaS. |
+| CTA de ingreso | Dirigir a usuarios autorizados hacia el acceso autenticado de la Web Application. | Conecta con el login de usuarios internos y compradores habilitados. |
+| Página Platform | Explicar módulos, capacidades y beneficios funcionales de Nexa. | Relaciona la propuesta pública con capacidades como catálogo, pedidos, inventario, despacho y evidencias. |
+| Rutas por tipo de operación | Adaptar el mensaje a importadores, mayoristas, distribuidores y operadores de cámaras frías. | Conecta la necesidad comercial de cada visitante con los segmentos funcionales S1, S2 y S3. |
+| Secciones de proceso y beneficios | Mostrar cómo cambia la operación antes y después de usar Nexa. | Refuerza los impactos esperados: menor tiempo de registro, menor error operativo y mayor visibilidad del pedido. |
+| Sección de contacto | Ofrecer un punto de comunicación para interesados que requieren más información. | Soporta la conversión comercial del visitante hacia una demostración o evaluación del producto. |
+| Footer y redes sociales | Dar cierre institucional, navegación secundaria y canales de contacto o presencia digital. | Aumenta confianza y facilita continuidad fuera del recorrido principal de la landing. |
 
-Esta continuidad no implica que la landing replique las pantallas operativas. Los CTAs principales dirigen al sitio desplegado o al login de la webapp; las rutas internas documentadas sirven como referencia de comportamiento dentro del producto autenticado.
+Esta continuidad no implica que la landing replique las pantallas operativas de la Web Application. Su función es presentar el modelo de negocio, orientar al visitante y conducirlo hacia el acceso o contacto correspondiente. Las pantallas autenticadas se documentan posteriormente en las secciones de Web Applications UX/UI Design y Product Implementation.
 
 ### 4.3.1. Landing Page Wireframe.
 
@@ -87,7 +97,7 @@ Una vez validada la estructura, los mockups se desarrollaron en **Figma** para f
 
 ![Mockup desktop de Home](../assets/images/chapter-4/landing/mockups/desktop/home.jpg)
 
-> *Nota*. Home presenta el mensaje principal, CTA, bloques de capacidades y cierre del recorrido público. Elaboración propia.
+> *Nota*. Home presenta el pitch principal de Nexa, los CTA de demostración e ingreso, los bloques de capacidades, la segmentación por tipo de operación y el cierre con contacto y redes sociales. Elaboración propia.
 
 *Figura. Mockup desktop de Platform*
 
@@ -133,4 +143,4 @@ La adaptación móvil mantiene el mismo lenguaje visual del sitio público y pri
 
 ![Mockup mobile de Home](../assets/images/chapter-4/landing/mockups/mobile/home.jpg)
 
-> *Nota*. La captura móvil valida hero, navegación compacta, secciones principales y cierre de contacto en una sola experiencia responsiva. Elaboración propia.
+> *Nota*. > *Nota*. La captura móvil valida que el pitch, la navegación, los CTA, las secciones principales, el contacto y el cierre institucional se mantengan accesibles en una experiencia responsiva. Elaboración propia.
