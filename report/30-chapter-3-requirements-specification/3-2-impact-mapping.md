@@ -1,33 +1,23 @@
 ## 3.2. Impact Mapping
 
-El mapa de impactos actúa como puente entre la investigación cualitativa y la especificación funcional: toma los problemas observados en entrevistas, needfinding y EventStorming, los ordena por impacto sobre el negocio y evita que el producto se expanda prematuramente hacia capacidades atractivas pero secundarias. Por ello, el mapa no se limita a ilustrar actores o módulos; su función es justificar por qué el MVP se concentra en el flujo crítico del pedido B2B refrigerado y no en una digitalización total de la empresa desde la primera iteración.
+El Impact Mapping de Nexa permite conectar los objetivos de negocio del producto con los actores que influyen en dichos objetivos, los cambios de comportamiento esperados y los entregables funcionales que permiten producir esos impactos. Esta sección funciona como puente entre los hallazgos del proceso de Requirements Elicitation & Analysis y la priorización posterior del Product Backlog.
 
-El mapa se estructura en cuatro niveles fundamentales:
+El mapa fue elaborado considerando los User Personas definidos para el proyecto y se organiza en cinco columnas principales: Business Goals, Personas, Impacts, Deliverables y User Stories. Esta estructura permite visualizar cómo cada historia contribuye a un objetivo de negocio y evita que el backlog se construya como una lista aislada de funcionalidades.
 
-1. **Meta (Goal):** resultado de negocio que se desea alcanzar.
-2. **Actor:** participante cuyo comportamiento puede acercar o alejar la meta.
-3. **Impacto:** cambio observable en la forma de actuar del actor.
-4. **Entregable (Deliverable):** componente funcional o técnico que facilita dicho cambio.
+Para mantener coherencia con la actualización del proyecto, los User Personas del mapa se interpretan dentro de los tres segmentos definitivos de Nexa:
 
-*Impact Mapping de Nexa — Alineación de metas, actores e impactos del MVP*
+1. **S1: Commercial Coordination**, representado por Valeria Sánchez, responsable de validar solicitudes, revisar pedidos capturados y coordinar la atención comercial.
+2. **S2: Operations / Account Owner**, representado por Roberto García, responsable de inventario, revisión operativa, despacho, trazabilidad y administración de la operación.
+3. **S3: B2B Buyer Portal**, representado por Elena Litano, compradora comercial externa que consulta catálogo, arma solicitudes, revisa pedidos y da seguimiento a la atención recibida.
+
+El primer Business Goal busca que 500 clientes comerciales B2B realicen pedidos recurrentes a través de Nexa de manera autónoma durante los primeros 6 meses de lanzamiento. Este objetivo se relaciona principalmente con S3 y S1, ya que busca reducir la dependencia de canales dispersos como WhatsApp, llamadas o registros manuales. Para S3, el impacto esperado es migrar el hábito de compra hacia una plataforma web con catálogo y envío estructurado de pedidos. Para S1, el impacto esperado es dejar de transcribir pedidos manualmente y revisar solicitudes estructuradas con menor riesgo de error.
+
+El segundo Business Goal busca reducir en 50% las llamadas de reclamo por “ceguera logística” y los rechazos operativos en ruta durante los primeros 8 meses. Este objetivo se relaciona principalmente con S2 y S3. Para S2, el impacto esperado es planificar el despacho con información sincronizada, estados actualizados y evidencias digitales de entrega. Para S3, el impacto esperado es consultar proactivamente el estado del pedido desde el portal, reduciendo consultas repetitivas a la distribuidora.
+
+*Impact Mapping de Nexa — Relación entre objetivos de negocio, personas, impactos, entregables y User Stories*
 
 ![Impact-mapping](../assets/images/chapter-3/impact-mapping/impact-map.png)
 
-> *Nota:* El mapa sintetiza la relación entre problemas observados en la investigación, actores priorizados y entregables requeridos para el MVP. Elaboración propia.
+La lectura central del Impact Mapping es que Nexa no busca comportarse como un ERP completo desde su primera versión. El MVP se concentra en mejorar la continuidad del flujo comercial-operativo: consulta de catálogo, solicitud del comprador, revisión comercial, revisión operativa, despacho y seguimiento. Por ello, los impactos esperados se relacionan con tres mejoras concretas: menor tiempo de registro, menor riesgo de errores operativos asociados a disponibilidad o despacho, y mayor visibilidad del pedido.
 
-La lectura central del diagrama es que Nexa no persigue una optimización genérica de la cadena de frío, sino una reducción específica de fricción en el pedido y en su trazabilidad posterior. Esa definición es importante porque delimita alcance. El proyecto prioriza visibilidad comercial y operativa donde la investigación encontró mayor densidad de errores: captura informal del pedido, validación tardía de stock o condiciones, incertidumbre sobre la entrega y baja capacidad de cierre con evidencia trazable.
-
-*Tabla de estructura statement del Impact Mapping*
-
-| Business Goal SMART | Actor / Persona | Impact | Deliverable |
-|---|---|---|---|---|
-| Alcanzar que 500 clientes comerciales B2B realicen pedidos recurrentes a través de la plataforma de manera autónoma en los primeros 6 meses de lanzamiento. | Elena Litano — S3: Comprador B2B / cliente comercial | Migrar el hábito de compra de WhatsApp hacia la plataforma web, autogestionando requerimientos sin esperar confirmación manual. | Portal B2B con catálogo interactivo y sistema de envío. |
-| Alcanzar que 500 clientes comerciales B2B realicen pedidos recurrentes a través de la plataforma de manera autónoma en los primeros 6 meses de lanzamiento. | Valeria Sánchez — S1: Coordinación comercial / ventas internas | Dejar de transcribir pedidos manualmente, actuando como validadora ágil de solicitudes estructuradas por el portal. | Módulo de revisión de captura comercial. |
-| Reducir las llamadas de reclamo por "ceguera logística" y los rechazos operativos en ruta en un 50% en el lapso de 8 meses. | Roberto García — S2: Jefatura logística / coordinación operativa | Planificar el despacho con inventario sincronizado y gestionar la flota usando evidencias digitales reportadas desde la calle. | Módulo de gestión operativa, seguimiento de despacho y evidencia e-POD. |
-| Reducir las llamadas de reclamo por "ceguera logística" y los rechazos operativos en ruta en un 50% en el lapso de 8 meses. | Elena Litano — S3: Comprador B2B / cliente comercial | Consultar proactivamente el estado y avance de su envío desde su celular en lugar de llamar repetidamente a la distribuidora. | Módulo de seguimiento y pedidos recientes B2B. |
-
-Una consecuencia relevante de esta lectura es que el mapa también justifica exclusiones. Quedan fuera del MVP inicial funcionalidades más amplias como analítica avanzada, optimización de rutas o automatizaciones secundarias porque, aunque puedan ser valiosas en el mediano plazo, no atacan primero el punto de quiebre identificado en la investigación: la discontinuidad entre captura, validación, abastecimiento y entrega. Mantener esa frontera fortalece la coherencia del capítulo, ya que el backlog deja de parecer una acumulación de ideas y se presenta como una secuencia argumentada de decisiones.
-El mapa también delimita qué queda fuera del MVP inicial. Capacidades como analítica avanzada, optimización de rutas o automatizaciones secundarias pueden aportar valor en una etapa posterior, pero no atienden primero el punto de quiebre identificado: la discontinuidad entre captura, validación, abastecimiento y entrega.
-
-Desde la lógica del informe, el Impact Mapping cumple así una función de bisagra. El Capítulo 2 demuestra dónde está el problema y quiénes lo experimentan con más intensidad; esta sección define qué cambios de comportamiento vale la pena provocar; y el Product Backlog de la sección 3.3 materializa ese razonamiento en un orden de construcción y liberación técnicamente ejecutable. Esa continuidad es la que permite leer el Capítulo 3 como especificación sustentada y no solo como inventario de historias.
-El Capítulo 2 muestra dónde aparece el problema y quiénes lo viven con mayor intensidad. Esta sección define los cambios de comportamiento esperados, y el Product Backlog de la sección 3.3 traduce esa lectura en una secuencia de construcción.
+Desde la lógica del informe, el Impact Mapping sirve como base para justificar el Product Backlog. Las User Stories priorizadas en la sección 3.3 deben responder a los impactos representados en el mapa, evitando priorizar funcionalidades aisladas que no contribuyan directamente al flujo principal de Nexa.
