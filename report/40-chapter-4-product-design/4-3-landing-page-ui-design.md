@@ -2,40 +2,44 @@
 
 La Landing Page es la superficie pública de entrada al ecosistema Nexa. Su función principal es comunicar la propuesta de valor, explicar el problema operativo que resuelve la plataforma, segmentar visitantes por tipo de operación y dirigirlos hacia una demostración, contacto comercial o acceso autenticado al producto.
 
-Esta sección traduce las decisiones definidas en **4.1 Style Guidelines** y **4.2 Information Architecture** hacia una propuesta visual concreta. La Landing Page no replica las pantallas internas de la Web Application ni del Buyer Portal; su objetivo es presentar el valor de Nexa con una narrativa clara, jerarquía visual consistente, CTAs visibles, lenguaje profesional y adaptación responsive.
+Esta sección traduce las decisiones definidas en **4.1 Style Guidelines** y **4.2 Information Architecture** hacia una propuesta visual concreta. La Landing Page no replica las pantallas internas de la Web Application ni del Buyer Portal; su objetivo es presentar el valor de Nexa mediante una narrativa clara, jerarquía visual consistente, CTAs visibles, lenguaje profesional, contacto identificable, canales de confianza y adaptación responsive.
 
 La referencia pública de implementación de la Landing Page se encuentra en: [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/).
 
-> *Nota:* La evidencia formal de despliegue, ejecución y validación debe documentarse en el Capítulo V. Esta sección se concentra en la propuesta UI, wireframes y mockups de la Landing Page.
+> *Nota:* La evidencia formal de despliegue, ejecución y validación se documenta en el Capítulo V. Esta sección se concentra en la propuesta UI, wireframes y mockups de la Landing Page.
 
-Cada elemento del sitio público mantiene continuidad con alguna capacidad del producto, pero sin inventar flujos que todavía no estén implementados. Las páginas de **Solutions** funcionan como rutas comerciales para empresas interesadas; no reemplazan los segmentos funcionales del producto. Los segmentos operativos definitivos siguen siendo **S1 — Commercial Coordination**, **S2 — Operations / Account Owner** y **S3 — B2B Buyer Portal**.
+El mensaje principal de la Landing Page resume la promesa de Nexa: **coordinar pedidos B2B refrigerados con mayor visibilidad entre compra, ventas, inventario y despacho**. A partir de ese pitch message, la interfaz organiza el contenido en una secuencia progresiva: problema operativo, propuesta de valor, capacidades de la plataforma, rutas por tipo de empresa, confianza institucional, preguntas frecuentes y puntos de conversión.
+
+Cada elemento del sitio público mantiene continuidad con una capacidad del producto. Las páginas de **Solutions** funcionan como rutas comerciales para empresas interesadas; no reemplazan los segmentos funcionales del producto. Los segmentos operativos definitivos siguen siendo **S1 — Commercial Coordination**, **S2 — Operations / Account Owner** y **S3 — B2B Buyer Portal**.
 
 | Elemento de la Landing Page | Intención de diseño | Continuidad en el producto | Superficie relacionada |
 |---|---|---|---|
+| Hero / Pitch message | Presentar el problema operativo y la promesa central de Nexa en el primer contacto visual | Introduce el flujo transversal: S3 solicita, S1 valida y S2 ejecuta | Landing Page |
 | CTA `Request a demo` / `Solicitar una demostración` | Convertir el interés del visitante en contacto comercial | Contacto guiado, revisión de operación y explicación del demo | Landing Page / Company contact |
 | CTA `Log in` / `Ingresar` | Permitir acceso a usuarios autenticados | Entrada al sistema mediante login | `#/auth/login` |
-| Home | Presentar el problema, la promesa de valor y el recorrido principal | Introduce el flujo transversal: S3 solicita, S1 valida y S2 ejecuta | Landing Page |
+| Home | Presentar el problema, la promesa de valor y el recorrido principal | Explica la relación entre pedidos, disponibilidad, coordinación y despacho | Landing Page |
 | Platform | Explicar capacidades de catálogo, pedidos, inventario, despacho y trazabilidad | Conecta la propuesta pública con dashboards y módulos internos | `/ops/commercial/dashboard`, `/ops/operations/dashboard`, `/portal/home` |
 | Solutions Hub | Segmentar la comunicación por tipo de empresa interesada | Permite que importadores, distribuidores y operadores de almacenamiento entiendan el valor según su operación | Landing Page |
 | Importers & Wholesalers | Comunicar valor para operaciones con abastecimiento, stock y lotes | Relaciona validación comercial, disponibilidad e inventario | `/ops/commercial/purchase-requests`, `/ops/operations/inventory-control` |
-| Distributors | Comunicar el flujo principal de pedido B2B, FEFO, despacho y evidencia | Relaciona Buyer Portal, purchase requests, purchase orders y dispatch orders | `/portal/product-catalog`, `/ops/commercial/purchase-requests`, `/ops/operations/dispatch-orders` |
-| Cold Storage Operators | Comunicar control de almacenamiento, trazabilidad y operación refrigerada | Relaciona inventario, lotes, analítica operativa y monitoreo como alcance progresivo | `/ops/operations/inventory-control`, `/ops/operations/operational-analytics` |
+| Distributors | Comunicar el flujo principal de pedido B2B, disponibilidad, despacho y evidencia | Relaciona Buyer Portal, purchase requests, purchase orders y dispatch orders | `/portal/product-catalog`, `/ops/commercial/purchase-requests`, `/ops/operations/dispatch-orders` |
+| Cold Storage Operators | Comunicar control de almacenamiento, trazabilidad y operación refrigerada | Relaciona inventario, lotes, control operativo y trazabilidad | `/ops/operations/inventory-control`, `/ops/operations/operational-analytics` |
 | Company | Generar confianza y presentar el contexto del equipo | Refuerza credibilidad antes del contacto comercial | Landing Page |
-| FAQ | Reducir fricción antes de solicitar una demostración | Responde dudas sobre implementación, seguridad, datos, alcance y roadmap | Landing Page |
-| Footer / Contact support | Ofrecer canales de contacto y navegación de soporte | Facilita acceso a email, contacto, FAQ y soluciones | Landing Page |
+| FAQ | Reducir fricción antes de solicitar una demostración | Responde dudas sobre implementación, seguridad, datos, alcance y contacto | Landing Page |
+| Footer / Contact support | Ofrecer canales de contacto, navegación de soporte y acceso a redes sociales | Facilita acceso a email, contacto, FAQ, soluciones y canales de confianza | Landing Page |
 
 ### Decisiones UI aplicadas en la Landing Page
 
 | Decisión de diseño | Aplicación en la Landing Page | Relación con arquitectura de información |
 |---|---|---|
-| Jerarquía visual | Hero con mensaje principal, subtítulo, CTAs y bloques de valor | Prioriza comprensión rápida antes de navegación profunda |
+| Jerarquía visual | Hero con pitch message, subtítulo, CTAs y bloques de valor | Prioriza comprensión rápida antes de navegación profunda |
 | Navegación global | Navbar con acceso a Platform, Solutions, Company, FAQ y CTAs | Refuerza el sistema de navegación definido en 4.2 |
 | Segmentación comercial | Solutions organiza rutas para importadores, distribuidores y operadores de cámaras frías | Permite explicar la propuesta por tipo de empresa interesada |
+| Conversión | CTAs visibles para solicitar demostración, iniciar sesión o continuar hacia contacto | Conecta navegación pública con acciones concretas del visitante |
+| Contacto y confianza | Company, FAQ y footer concentran información institucional, soporte, email y redes sociales | Reduce incertidumbre antes de compartir datos comerciales |
 | Consistencia visual | Uso de colores, tipografía, cards, botones y espaciado definidos en 4.1 | Mantiene continuidad con el Design System de Nexa |
 | Diseño inclusivo | Texto legible, contraste, CTAs identificables, labels claros y navegación simple | Reduce fricción para visitantes con distintos niveles de familiaridad tecnológica |
-| Responsive design | Adaptación de hero, navegación, cards y secciones a una lectura vertical en mobile | Permite que la experiencia pública funcione en desktop y mobile |
-| Continuidad con producto | CTAs y mensajes conectan con login, demo, catálogo, solicitudes, pedidos e inventario | Evita que la Landing Page sea un artefacto aislado |
-
+| Responsive design | Adaptación de hero, navegación, cards, CTAs y secciones a una lectura vertical en mobile | Permite que la experiencia pública funcione en desktop y mobile |
+| Continuidad con producto | Mensajes y rutas conectan con login, demo, catálogo, solicitudes, pedidos e inventario | Evita que la Landing Page sea un artefacto aislado |
 ### 4.3.1. Landing Page Wireframe
 
 La Landing Page de Nexa se trabajó primero en **Figma** mediante wireframes de baja fidelidad. En esta etapa se ordenaron contenido, jerarquía de secciones, navegación, rutas por tipo de visitante y puntos de conversión antes de pasar a mockups de mayor detalle.
