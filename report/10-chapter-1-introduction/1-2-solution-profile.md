@@ -5,6 +5,7 @@
 La cadena de frío cumple un rol crítico en sectores como alimentos, productos farmacéuticos y agroexportación, al asegurar que los productos sensibles a la temperatura mantengan su calidad e inocuidad durante el almacenamiento, transporte y distribución hasta el usuario final (Vértiz, 2011). Estudios en distintos países de la región muestran que fallas en uno o varios eslabones de la cadena de frío, especialmente en transporte y venta al por menor, se asocian con incumplimientos de normas de temperatura, proliferación microbiana y reducción de la vida útil de lácteos, carnes y otros perecederos (Tutiven et al., 2026; Arriaga et al., 2023). Al respecto, las investigaciones demuestran una constante fluctuación térmica en la comercialización de cortes de res, registrando temperaturas que superan ampliamente los límites normativos, como se evidencia en la siguiente tabla. Esta deficiencia subraya la necesidad de un control logístico riguroso y continuo antes de que el producto llegue al cliente comercial.
 
 *Temperaturas promedio (°C) en cortes de carne de res*
+
 | Supermercado | Enero | Febrero | Marzo | Abril | Mayo | Media General |
 | --- | --- | --- | --- | --- | --- | --- |
 | Supermercado 1 | 10.17 | 9.78 | 10.16 | 8.91 | 9.71 | 9.75 |
@@ -17,6 +18,7 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
 En el contexto peruano, investigaciones en salud y logística evidencian que las rupturas de cadena de frío no son un fenómeno aislado: por ejemplo, un estudio en establecimientos de salud de la Microred Río Negro registró múltiples excursiones térmicas por encima y por debajo de los rangos aceptables, con implicancias directas en la calidad de biológicos. Como se observa en la siguiente tabla, los incidentes de pérdida de temperatura son una constante mensual, evidenciando la alta vulnerabilidad operativa del ecosistema logístico del frío en el país.
 
 *Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud*
+
 | Mes | < 0°C (Congelación) | > 8°C (Sobrecalentamiento) | Total de Rupturas |
 | --- | --- | --- | --- |
 | Enero | 0 | 5 | 5 |
@@ -49,11 +51,13 @@ Investigaciones sobre almacenamiento y distribución de perecederos muestran que
 Como consecuencia de esta desarticulación se observan tres impactos principales. Para hacerlos explícitos, la siguiente tabla resume qué ocurre en la operación, por qué ocurre y cuál es el sustento bibliográfico que respalda cada efecto.
 
 *Impactos operativos y comerciales de la fragmentación del pedido*
+
 | Impacto | Manifestación concreta en la operación | Relación con el problema | Sustento |
 | --- | --- | --- | --- |
 | **Errores en preparación y despacho** | Cantidades inexactas, productos equivocados, retrasos por quiebre de stock y necesidad de aclaraciones de último momento entre ventas, almacén y reparto. | Cuando el pedido se captura manualmente y luego se reinterpreta en sistemas no integrados, aumenta la probabilidad de que la información llegue incompleta, tarde o con ambigüedades al área operativa. | Muñoz et al. (2022); Buenaño et al. (2024). |
 | **Mermas económicas por mala rotación** | Pérdida de producto por caducidad, despacho de mercadería con rotación ineficiente y dificultad para aplicar criterios FIFO o FEFO de forma consistente. | Si pedidos, inventario y fechas de vencimiento no están conectados, la operación pierde capacidad para priorizar lotes y sostener una rotación compatible con productos perecederos. | Tutiven et al. (2026); Arriaga et al. (2023). |
 | **Riesgo normativo y sanitario** | Falta de trazabilidad, debilidad documental frente a auditorías, respuesta lenta ante incidencias y mayor exposición a incumplimientos en cadena de frío. | La comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta. Cuando esas evidencias no se consolidan, el riesgo deja de ser solo operativo y pasa a comprometer cumplimiento normativo e inocuidad. | Vértiz (2011); Tutiven et al. (2026). |
+
 > *Nota:* La tabla expone de forma comparativa cómo un mismo problema de fragmentación informativa deriva en efectos distintos sobre operación, costos y cumplimiento. Elaboración propia con base en la literatura citada.
 
 A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020).
@@ -69,6 +73,7 @@ La relevancia de este problema no radica únicamente en la pérdida de eficienci
 En coherencia con la problemática expuesta, el proyecto requiere explicitar tanto los objetivos que orientan la propuesta como las restricciones que delimitan el alcance académico y técnico del MVP. Esta delimitación resulta importante porque evita sobredimensionar la solución: Nexa no busca demostrar que puede reemplazar de inmediato a todo el ecosistema logístico del frío, sino que puede ordenar el núcleo del flujo comercial-operativo donde hoy se concentra la mayor fricción.
 
 *Objetivos y restricciones del proyecto*
+
 | Tipo | Definición aplicada a Nexa |
 | --- | --- |
 | Objetivo general | Diseñar y validar una solución web especializada que permita ordenar el flujo principal de pedidos B2B de productos refrigerados, integrando catálogo, condiciones comerciales, captura del pedido, inventario básico y seguimiento operativo. |
