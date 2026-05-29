@@ -43,7 +43,7 @@ flowchart LR
 
     SEG3 -->|Catálogo, solicitud, tracking y documentos| SEG1
     SEG1 -->|Requests, orders, business docs y clients| SEG2
-    SEG2 -->|Inventory, dispatch orders, POD, company admin y promotions| SEG1
+    SEG2 -->|Inventory, dispatch orders, POD, company administration y promotions| SEG1
     SEG1 -->|Confirmación, estado y comunicación comercial| SEG3
 ```
 
@@ -450,6 +450,6 @@ Cada segmento cumple una función específica dentro del recorrido del pedido y 
 | S2 | Justifica las épicas e historias relacionadas con inventario, lotes, FEFO, despacho, evidencias, administración de empresa, accesos y control del tenant. |
 | S3 | Justifica las épicas e historias relacionadas con catálogo, portal comprador, creación de solicitudes, seguimiento de pedidos, consulta de documentos y comunicación con la empresa proveedora. |
 
->*Nota*: La tabla resume cómo cada segmento sostiene la trazabilidad entre investigación, funcionalidades, user stories, Jira, bounded contexts y futuras evidencias de validación. Elaboración Propia.
+>*Nota*: La tabla resume cómo cada segmento sostiene la trazabilidad entre investigación, funcionalidades, user stories, bounded contexts y evidencias de validación. Elaboración Propia.
 
-En conjunto, los tres segmentos permiten representar el ciclo principal de Nexa: el comprador solicita, el equipo comercial valida y convierte, y operación controla la ejecución. Esta lectura será utilizada como base para actualizar Lean UX, Needfinding, User Stories, Product Backlog, Jira, C4, DDD y los diagramas de clases.
+En conjunto, los tres segmentos permiten representar el ciclo principal de Nexa: el comprador solicita, el equipo comercial valida y convierte, y operación controla la ejecución. Esta lectura articula Lean UX, Needfinding, User Stories, Product Backlog, C4, DDD y los diagramas de clases.
